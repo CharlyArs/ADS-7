@@ -25,7 +25,7 @@ int Train::getOpCount() {
 int Train::getLength() {
     if (!first) return 0;
 
-    countOp = 0; 
+    countOp = 0;
     Car* current = first;
 
     current->light = true;
@@ -46,7 +46,6 @@ int Train::getLength() {
         }
 
         if (!current->light) {
-            // Свет выключен -> мы обошли весь круг
             return length;
         }
 
